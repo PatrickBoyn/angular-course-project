@@ -2,7 +2,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-
+// Ignore this for now.
 import { RecipeListComponent } from './recipe-list.component';
 
 describe('RecipeListComponent', () => {
@@ -11,9 +11,8 @@ describe('RecipeListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RecipeListComponent ]
-    })
-    .compileComponents();
+      declarations: [RecipeListComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
