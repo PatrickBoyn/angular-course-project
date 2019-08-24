@@ -13,4 +13,4 @@ const appRoutes: Routes = [
     imports: [RouterModule.forRoot(appRoutes)],
     exports: [RouterModule]
 })
-class AppRoutingModule {}
+export class AppRoutingModule {}
