@@ -25,7 +25,9 @@
             <button class="btn btn-success" type="submit" [disabled]="!form.valid">
               {{ editMode ? 'Update' : 'Add' }} ingredient
             </button>
-            <button class="btn btn-danger" type="button" (click)="onDelete()">Delete ingredient</button>
+            <button class="btn btn-danger" type="button" *ngIf="editMode" (click)="onDelete()">
+              Delete ingredient
+            </button>
             <button class="btn btn-primary" (click)="onClear()">Clear</button>
           </div>
         </div>
