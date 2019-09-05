@@ -36,6 +36,7 @@
               id="image-path"
               formControlName="imagePath"
               class="form-control"
+              #imagePath
             />
           </div>
         </div>
@@ -43,7 +44,7 @@
       <div class="row">
         <div class="col-xs-12">
           <img
-            src=""
+            [src]="imagePath.value"
             alt="recipe-image"
             formControlName="imagePath"
             class="img-responsive"
